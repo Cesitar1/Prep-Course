@@ -103,7 +103,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-    return (num > 50)   
+    return num > 50;
 }
 
 mayorQueCincuenta(48); //false
@@ -118,7 +118,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (num%2===0){
+    if (num % 2 === 0){
       return true;
     } else {
   return false;
@@ -131,7 +131,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (num%2===1){
+    if (num % 2 === 1){
       return true;
   } else {
 return false;
@@ -201,14 +201,16 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-    if (numero > 0){
-      return "Es positivo";
-    } else "Es Negativo";
-    }
-    if (numero === 0){
-      return false;
-    }
-    esPositivo();
+  if(numero === 0) {
+    return false;
+  }
+  else if(numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
+}
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -243,8 +245,7 @@ obtenerSaludo("Cesar");
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-    var alto, ancho;
-      return alto * ancho;  
+      return alto * ancho;
 }
 
 console.log(obtenerAreaRectangulo);
