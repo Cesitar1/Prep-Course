@@ -73,10 +73,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (x = y){
+    if (x === y){
       return true;
-    }
+    } else {
   return false;
+  }
 }
 
 sonIguales(10, 5); //false
@@ -85,10 +86,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (str1 = str2){
+    if (str1.length === str2.lenght){
       return true;
-    }
+    } else {
   return false;
+  }
 }
 
 tienenMismaLongitud("nueve", "nueve"); //true
@@ -99,8 +101,9 @@ function menosQueNoventa(num) {
   // Tu código:
     if (num < 90){
       return true;
-    }
+    } else {
   return false;
+  }
 }
 
 menosQueNoventa(70); //true
@@ -111,8 +114,9 @@ function mayorQueCincuenta(num) {
   // Tu código:
     if(num > 50){
       return true;
-    }
+    } else {
   return false;
+  }
 }
 
 mayorQueCincuenta(48); //false
@@ -120,17 +124,18 @@ mayorQueCincuenta(48); //false
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-    var x = 10 % 5; //2
+    var division = x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (num%2==0){
+    if (num%2===0){
       return true;
-    }
+    } else {
   return false;
+  }
 }
 
 esPar(2); //true
@@ -139,10 +144,11 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (num%2==1){
+    if (num%2===1){
       return true;
-  }
+  } else {
 return false;
+}
 }
 
 esImpar(4); //false
@@ -151,7 +157,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-    Math.pow(num,2);  
+   return Math.pow(num,2);  
 }
 
 elevarAlCuadrado(num);
@@ -204,10 +210,9 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
     if (numero > 0){
       return "Es positivo";
+    } else "Es Negativo";
     }
-      return "Es Negativo";
-    }
-    if (numero = 0){
+    if (numero === 0){
       return false;
     }
     esPositivo();
@@ -228,7 +233,7 @@ function combinarNombres(nombre, apellido) {
   // Tu código:
     var nombre = "Cesar";
     var apellido = "Parra";
-    var junto = nombre + apellido;
+    var junto = nombre + ' ' + apellido;
   return junto;  
 }
 
@@ -238,7 +243,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-    console.log("Hola, " + nombre);
+    console.log("Hola, " + nombre + "!");
 }
 
 obtenerSaludo("Cesar");
@@ -257,7 +262,7 @@ function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
     var lado;
-      return lado * 10;
+      return lado * 4;
 }
 
 console.log(retornarPerimetro);
@@ -290,7 +295,7 @@ function esVocal(letra){
     if (letra=a, letra=e, letra=i, letra=o, letra=u){
       console.log("Es una vocal")
     } else ("Dato incorrecto")
-        if (letra.length !=1){
+        if (letra.length > 1){
           console.log("Dato incorrecto")
         }
     }
