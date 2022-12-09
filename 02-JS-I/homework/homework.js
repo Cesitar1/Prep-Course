@@ -81,11 +81,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (str1.length === str2.lenght){
-      return true;
-    } else {
-  return false;
-  }
+    return (str1.length === str2.lenght)   
 }
 
 tienenMismaLongitud("nueve", "nueve"); //true
@@ -107,11 +103,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-    if(num > 50){
-      return true;
-    } else {
-  return false;
-  }
+    return (num > 50)   
 }
 
 mayorQueCincuenta(48); //false
@@ -119,7 +111,7 @@ mayorQueCincuenta(48); //false
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-    var division = x % y;
+    return x % y;
 }
 
 function esPar(num) {
@@ -160,7 +152,7 @@ elevarAlCuadrado(num);
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-    Math.pow(num,3);
+    return num*num*num
   
 }
 
@@ -169,7 +161,7 @@ elevarAlCubo(num);
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-    Math.pow(num,5);  
+    return Math.pow(num,exponent);  
 }
 
 elevar(num, 5);
