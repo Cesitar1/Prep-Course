@@ -84,8 +84,6 @@ function tienenMismaLongitud(str1, str2) {
     return (str1.length === str2.lenght)   
 }
 
-tienenMismaLongitud("Cinco", "Cinco"); //true
-
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
@@ -187,7 +185,7 @@ redondearHaciaArriba(8.2); //9
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-    return (Math.random);
+    return (Math.random) * (1 - 0)+ 0;
   
 }
 numeroRandom();
@@ -234,7 +232,7 @@ function obtenerSaludo(nombre) {
     return ("Hola, " + nombre + "!");
 }
 
-obtenerSaludo("Cesar");
+obtenerSaludo("Martin");
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
