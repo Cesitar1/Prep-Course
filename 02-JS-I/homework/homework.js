@@ -159,7 +159,7 @@ function elevar(num, exponent) {
     return Math.pow(num,exponent);  
 }
 
-elevar(num, 5);
+elevar(4, 5);
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
