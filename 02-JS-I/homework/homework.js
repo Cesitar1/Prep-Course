@@ -81,7 +81,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    return (str1.length === str2.lenght)   
+        return str1.length === str2.length; 
 }
 
 function menosQueNoventa(num) {
@@ -185,7 +185,7 @@ redondearHaciaArriba(8.2); //9
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-    return (Math.random) * (1 - 0)+ 0;
+    return Math.random(1);
   
 }
 numeroRandom();
@@ -229,7 +229,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-    return ("Hola, " + nombre + "!");
+    return ("Hola " + nombre + "!");
 }
 
 obtenerSaludo("Martin");
