@@ -205,13 +205,12 @@ function esPositivo(numero) {
     if (numero > 0){
       return "Es positivo";
     }
-    if (numero < 0){
       return "Es Negativo";
     }
     if (numero = 0){
       return false;
     }
-}
+    esPositivo();
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -230,9 +229,10 @@ function combinarNombres(nombre, apellido) {
     var nombre = "Cesar";
     var apellido = "Parra";
     var junto = nombre + apellido;
-  return junto;
-  
+  return junto;  
 }
+
+  combinarNombres();
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -265,17 +265,21 @@ console.log(retornarPerimetro);
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+    var area = (base*altura)/2;
+      console.log(area);
 }
 
+areaDelTriangulo();
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+    var moneda = euro * 1.2;
+      console.log(moneda);
 }
 
+deEuroAdolar();
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
@@ -283,8 +287,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
-}
+    if (letra=a, letra=e, letra=i, letra=o, letra=u){
+      console.log("Es una vocal")
+    } else ("Dato incorrecto")
+        if (letra.length !=1){
+          console.log("Dato incorrecto")
+        }
+    }
+    
 
 
 
