@@ -16,7 +16,7 @@
     - Strings: Son nombres que se le dan a los valores y puede ser cualquier objeto.
     - Funciones: Son las tareas que quieres que se ejecuten dentro de tu programa para mostrar un resultado.
     - Declaraciones: Indica más específicamente, tomar una decisión cuando se ejecute una tarea.
-    - Valores booleanos: 
+    - Valores booleanos: Indica si un valor es verdadero o falso.
 
 2. Instalar Node y NPM. NPM se incluye con Node. <https://nodejs.org/en/download/>
 
