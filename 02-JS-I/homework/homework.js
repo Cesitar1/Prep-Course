@@ -169,7 +169,13 @@ elevar(num, 5);
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-    Math.round(num);
+    var resto = num % 1;
+    var entero = num - resto;
+      if (resto >= 0.5){
+        return entero + 1;
+      } else {
+        return entero;
+    }
 }
 
 redondearNumero(3.5); //4
@@ -177,7 +183,7 @@ redondearNumero(3.5); //4
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-    Math.ceil(num);
+    return Math.ceil(num);
 }
 
 redondearHaciaArriba(8.2); //9
@@ -185,7 +191,7 @@ redondearHaciaArriba(8.2); //9
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-    Math.floor(Math.random()* 2);
+    return (Math.random);
   
 }
 numeroRandom();
@@ -208,8 +214,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-    let signo = "!";
-      console.log(str + signo);
+    return str + "!";
 }
 
 agregarSimboloExclamacion("Hello World");
@@ -230,7 +235,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-    console.log("Hola, " + nombre + "!");
+    return ("Hola, " + nombre + "!");
 }
 
 obtenerSaludo("Cesar");
@@ -238,7 +243,7 @@ obtenerSaludo("Cesar");
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-    var alto = 5, ancho = 15;
+    var alto, ancho;
       return alto * ancho;  
 }
 
@@ -257,8 +262,8 @@ console.log(retornarPerimetro);
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-    var area = (base*altura)/2;
-      console.log(area);
+    return (base*altura)/2;
+     
 }
 
 areaDelTriangulo();
@@ -267,8 +272,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-    var moneda = euro * 1.2;
-      console.log(moneda);
+    return  moneda = euro * 1.2;
 }
 
 deEuroAdolar();
@@ -279,12 +283,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-    if (letra=a, letra=e, letra=i, letra=o, letra=u){
-      console.log("Es una vocal")
-    } else ("Dato incorrecto")
-        if (letra.length > 1){
-          console.log("Dato incorrecto")
-        }
+  if(letra.length > 1){
+    return "Dato incorrecto"
+  }
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
     }
     
 
