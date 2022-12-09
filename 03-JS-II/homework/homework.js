@@ -18,7 +18,7 @@ function mayoriaDeEdad(edad) {
     if (edad >= 18){
       return "Allowed";
     } else {
-        return "Not Allowed";
+        return "Not allowed";
     }
 }
   
@@ -33,7 +33,7 @@ function conection(status) {
     } else if (status === 2){
       return "Away";
     } else {
-      return "offline";
+      return "Offline";
     }
   }
 
@@ -107,9 +107,9 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-    if(numero % 15 === 0) return 'fizz';
-    if(numero % 3 === 0) return 'buzz';
-    if(numero % 5 === 0) return 'fizzbuzz';
+    if(numero % 15 === 0) return 'fizzbuzz';
+    if(numero % 3 === 0) return 'fizz';
+    if(numero % 5 === 0) return 'buzz';
       return numero;
 }
 
