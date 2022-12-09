@@ -176,6 +176,7 @@ function redondearNumero(num) {
       } else {
         return entero;
     }
+    return Math.round(num);
 }
 
 redondearNumero(3.5); //4
@@ -225,10 +226,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-    var nombre = "Cesar";
-    var apellido = "Parra";
-    var junto = nombre + ' ' + apellido;
-  return junto;  
+    var combina = nombre + ' ' + apellido;
+      return combina;  
 }
 
   combinarNombres();
