@@ -84,7 +84,7 @@ function tienenMismaLongitud(str1, str2) {
     return (str1.length === str2.lenght)   
 }
 
-tienenMismaLongitud(str1, str2); //true
+tienenMismaLongitud("Cinco", "Cinco"); //true
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -151,7 +151,7 @@ function elevarAlCubo(num) {
   
 }
 
-elevarAlCubo(num);
+elevarAlCubo(2);
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
