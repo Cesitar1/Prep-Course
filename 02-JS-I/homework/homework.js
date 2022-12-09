@@ -84,7 +84,7 @@ function tienenMismaLongitud(str1, str2) {
     return (str1.length === str2.lenght)   
 }
 
-tienenMismaLongitud("nueve", "nueve"); //true
+tienenMismaLongitud(str1, str2); //true
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -105,9 +105,6 @@ function mayorQueCincuenta(num) {
   // Tu código:
     return num > 50;
 }
-
-mayorQueCincuenta(48); //false
-
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
@@ -146,8 +143,6 @@ function elevarAlCuadrado(num) {
   // Tu código:
    return Math.pow(num,2);  
 }
-
-elevarAlCuadrado(num);
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
