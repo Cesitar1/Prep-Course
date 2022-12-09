@@ -28,8 +28,8 @@ const nuevoModulo = 21 % 5 === 4.2;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-
-  
+  var nombreBarrio = "Fragua";
+  return devolverString;
 }
 
 function suma(x, y) {
@@ -120,78 +120,117 @@ mayorQueCincuenta(48); //false
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-    var x = 10 / 5; //2
+    var x = 10 % 5; //2
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+    if (num%2==0){
+      return true;
+    }
+  return false;
 }
+
+esPar(2); //true
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+    if (num%2==1){
+      return true;
+  }
+return false;
 }
+
+esImpar(4); //false
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+    Math.pow(num,2);  
 }
+
+elevarAlCuadrado(num);
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+    Math.pow(num,3);
   
 }
+
+elevarAlCubo(num);
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+    Math.pow(num,5);  
 }
+
+elevar(num, 5);
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+    Math.round(num);
 }
+
+redondearNumero(3.5); //4
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+    Math.ceil(num);
 }
+
+redondearHaciaArriba(8.2); //9
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+    Math.floor(Math.random()* 2);
   
 }
+numeroRandom();
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+    if (numero > 0){
+      return "Es positivo";
+    }
+    if (numero < 0){
+      return "Es Negativo";
+    }
+    if (numero = 0){
+      return false;
+    }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+    let signo = "!";
+      console.log(str + signo);
 }
+
+agregarSimboloExclamacion("Hello World");
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+    var nombre = "Cesar";
+    var apellido = "Parra";
+    var junto = nombre + apellido;
+  return junto;
   
 }
 
@@ -199,22 +238,29 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+    console.log("Hola, " + nombre);
 }
+
+obtenerSaludo("Cesar");
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+    var alto = 5, ancho = 15;
+      return alto * ancho;  
 }
+
+console.log(obtenerAreaRectangulo);
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+    var lado;
+      return lado * 10;
 }
 
+console.log(retornarPerimetro);
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
