@@ -10,14 +10,14 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-    return array[-1];
+    return array[array.length - 1];
 }
 
 
-function obtenerLargoDelArray(array) {
+function obtenerLargoDelArray(arr) {
   // Devuelve el largo de un array
   // Tu código:
-    return array[array.lenght];
+    return arr.lenght;
 }
 
 
@@ -27,10 +27,11 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var nuevoArray = [];
-    for (var i = 0; i < array.lenght; i++){
-      nuevoArray[i] = array[i]+1;
-    }
-    return array;  
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
+  }
+
+  return nuevoArray;  
 }
 
 
@@ -38,7 +39,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-    array[array.lenght] = elemento;
+    array[array.length] = elemento;
       return array;  
 }
 
